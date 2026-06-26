@@ -11,7 +11,7 @@ export class ApiExpress {
   }
 
   public registerRoutes(routes: any) {
-    this.app.use(routes);
+    this.app.use("/api/v1", routes);
   }
 
   public start(port: number) {
